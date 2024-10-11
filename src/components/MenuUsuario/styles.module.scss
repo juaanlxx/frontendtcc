@@ -1,0 +1,114 @@
+.body {
+    * {
+      margin: 0;
+      padding: 0;
+    }
+  
+    position: relative;
+  
+    .logo {
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      left: 10px; /* Mantendo a logo alinhada à esquerda */
+    }
+  
+    .navbar {
+      display: flex;
+      justify-content: center; /* Centralizando o menu de navegação */
+      align-items: center;
+      width: 100%;
+      padding: 0 60px;
+      box-sizing: border-box;
+      position: relative;
+  
+      .nav_links {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        margin: 0;
+        padding: 40px 0;
+    
+        li {
+          margin-left: 40px;
+        }
+    
+        li a {
+          text-decoration: none;
+          color: #000;
+        }
+      }
+  
+      .botao {
+        margin-left: auto; /* Botão alinhado à direita */
+        margin-right: 20px;
+  
+        button {
+          width: 110px;
+          padding: 5px;
+          text-align: center;
+          border-radius: 8px;
+          border: solid 1px black;
+          background-color: #FFF;
+  
+          a {
+            text-decoration: none;
+            font-size: 14px;
+            color: black;
+          }
+  
+          .iconeLogin {
+            width: 14px;
+            height: 14px;
+          }
+        }
+      }
+    }
+  
+    .iconePerfil {
+      position: absolute;
+      right: 10px; /* Mantendo o ícone de perfil alinhado à direita */
+      width: 50px; /* Ajustando o tamanho do ícone de perfil */
+      height: 50px;
+    }
+  
+    /* Media queries para responsividade */
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 20px;
+      }
+  
+      .logo {
+        position: relative;
+        margin-bottom: 10px;
+      }
+  
+      .nav_links {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+  
+        li {
+          margin-left: 0;
+          margin-bottom: 15px;
+        }
+      }
+  
+      .botao {
+        margin-top: 15px;
+      }
+    }
+  
+    @media (max-width: 480px) {
+      .navbar {
+        padding: 0 10px;
+      }
+  
+      .nav_links li {
+        margin-bottom: 12px;
+      }
+    }
+  }
+  

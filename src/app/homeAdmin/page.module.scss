@@ -1,0 +1,172 @@
+.container {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+    padding: 20px;
+    margin: 30px 5%;
+
+    .alignCards {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        gap: 20px; 
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .cardsContainer {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 20px; 
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .card {
+        background-color: #f9f9f9;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 40px;
+        text-align: center;
+        width: 60%;
+        height: 40%;
+        margin-right: 100%;
+        margin-bottom: 6%;
+    }
+
+    .icon {
+        width: 15%;
+        height: 15%;
+        margin-left: 0;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .content {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+
+        h3 {
+            font-size: 125%;
+            color: #333;
+            margin: 0 0 0 20%;
+            font-weight: bold;
+        }
+    }
+
+    .imageFull {
+        margin-top: 80px;
+        width: 100%;
+        height: 80%;
+        border-radius: 8px;
+        border: 1px solid #000;
+    }
+
+    .image {
+        width: 65%; 
+        height: 65%;
+    }
+}
+
+/* Media queries para responsividade */
+@media (max-width: 1200px) {
+    .container {
+        margin: 30px 3%;
+    }
+
+    .card {
+        width: 80%; /* Reduzindo a largura dos cards */
+        margin-right: 0; /* Ajustando o margin para evitar quebra */
+    }
+
+    .icon {
+        width: 20%; /* Aumentando o ícone para mais visibilidade */
+        height: 20%;
+    }
+
+    .content h3 {
+        font-size: 110%; /* Ajustando o tamanho da fonte */
+        margin-left: 10%;
+    }
+
+    .image {
+        width: 80%; /* Ajustando a largura das imagens */
+        height: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin: 20px 2%;
+    }
+
+    .cardsContainer {
+        flex-direction: column; /* Faz os cards ficarem em uma única coluna */
+        align-items: center;
+    }
+
+    .alignCards {
+        gap: 10px;
+    }
+
+    .card {
+        width: 100%; /* Card ocupa toda a largura da tela */
+        padding: 20px; /* Diminuindo padding para telas menores */
+    }
+
+    .icon {
+        width: 25%; /* Aumentando o ícone para telas pequenas */
+        height: 25%;
+    }
+
+    .content h3 {
+        font-size: 100%;
+        margin-left: 0; /* Centralizando o título para melhorar visualização */
+    }
+
+    .image {
+        width: 100%;
+        height: auto; /* Mantém a proporção das imagens */
+    }
+
+    .imageFull {
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+        margin: 10px 1%;
+    }
+
+    .card {
+        padding: 10px;
+    }
+
+    .icon {
+        width: 30%; /* Aumentando o tamanho dos ícones para telas muito pequenas */
+        height: 30%;
+    }
+
+    .content h3 {
+        font-size: 90%; /* Reduzindo ainda mais o tamanho da fonte */
+    }
+
+    .image {
+        width: 100%;
+        height: auto;
+    }
+
+    .imageFull {
+        height: auto;
+    }
+}

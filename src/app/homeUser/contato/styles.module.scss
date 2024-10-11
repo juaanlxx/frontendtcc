@@ -1,0 +1,73 @@
+// styles.module.scss
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    flex-direction: column;
+    height: 100vh; /* Ocupa toda a altura da viewport */
+
+    h1 {
+        font-size: 28px;
+        margin-bottom: 20px;
+        margin-top: 10%;
+    }
+
+    h2 {
+        font-size: 20px;
+        margin-bottom: 40px;
+        color: #666;
+    }
+}
+
+.socialLinks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.socialLink {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; /* Alinhamento central de ícones e texto */
+    gap: 15px;
+    margin-bottom: 20px;
+
+    h4 {
+        font-size: 18px;
+        margin: 0;
+    }
+}
+
+.icon {
+    width: 7%;
+    height: auto;
+}
+
+.icon2 {
+    width: 3%;
+    height: auto;
+}
+.icon3{
+    width: 7%;
+    height: auto;
+}
+.icon4{
+    width: 7%;
+    height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .socialLinks {
+        flex-direction: column;
+    }
+
+    .socialLink {
+        justify-content: center;
+    }
+}
